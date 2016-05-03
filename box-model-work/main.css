@@ -1,4 +1,5 @@
 #container {
+    position: relative;
     height: 500px;
     width: 500px;
     background-color: gray;
@@ -7,13 +8,21 @@
     background-color: red;
     height: 100px;
     width: 100px;
+    top: 0;
+    left: 40;
 }
 #square2 {
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
     background-color: blue;
     height: 100px;
     width: 100px;
 }
 #square3 {
+    position: absolute;
+    top: 30%;
+    right: -25px;
     background-color: green;
     height: 100px;
     width: 100px;
@@ -22,4 +31,24 @@
     background-color: black;
     height: 100px;
     width: 100px;
+}
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+div, p {
+    border: 1px solid red;
+}
+div {
+    margin: 0 auto;
+   /* border: 5px solid black;*/
+    padding: 2px;
 }
