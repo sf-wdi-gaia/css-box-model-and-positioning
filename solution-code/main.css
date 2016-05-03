@@ -1,0 +1,63 @@
+
+#container {
+    height: 500px;
+    position: static; 
+    width: 500px;
+    background-color: gray;
+}
+#square1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+     position:relative;
+    top: 0;
+    left: 40px; 
+    /* position:absolute;
+    top: 0;
+    right: 0; */
+}
+#square2 {
+     position: static; 
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+     top: 0;
+    left: 0; 
+}
+#square3 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+#square4 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+* {
+    border: 1px solid red !important;
+} 
+
+div {
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 2px;
+} 
+
+p {
+    padding: 20px;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+

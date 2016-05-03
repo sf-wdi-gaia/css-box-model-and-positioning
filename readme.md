@@ -1,3 +1,9 @@
+<!--
+    Author: Baseline Curriculum 2.0
+    Edited: WDI29, Ben Hulan
+    Market: SF
+
+-->
 
 # CSS Box Model and Positioning
 
@@ -17,7 +23,7 @@
 - Write basic HTML
 - Use the chrome console
 
-## An Intro to The Box Model (5 mins)
+## An Intro to The Box Model
 
 All HTML elements can be considered boxes. Even if you see a circle, it's living within a box.
 
@@ -25,7 +31,7 @@ The CSS box model describes this principal - a box wraps around all HTML element
 
 With CSS properties and values, it is possible to apply specific styles to each of these elements, and change the way they behave and/or display on the page.
 
-## Box Model Demo - Codealong (5 mins)
+## Box Model Demo - Catch Up
 
 Let's write some HTML we can come back to and use to visualize what we're talking about.
 
@@ -90,7 +96,7 @@ How about if we drop this code into our CSS file:
 
 Notice the body, the container, and each of the divs are surrounded by a red border.  Peak at the styles tab on the right and scroll all the way to the bottom.  You'll notice boxes within boxes - madness!
 
-## The Box Model and its components - Intro (10 mins)
+## The Box Model and its components - Intro 
 
 The image below illustrates the box model and what you should have seen in your dev tools:
 
@@ -109,7 +115,7 @@ But what do these different layers mean, and how are they relating to one anothe
 
 * **Content** - The content of the box, where text and images appear
 
-#### Layers of the Box Model - Codealong (15 mins)
+#### Layers of the Box Model - Catch Up 
 
 Let's get go into some more detail and practice with each of these elements of The Box Model.
 
@@ -207,7 +213,7 @@ p {
 Amazing!  Add those styles to your CSS file.
 
 
-## Taking Up Space using Display - Intro (15 mins)
+## Taking Up Space using Display - Intro
 
 Cool, right? Each HTML element gets its own box to live in.
 
@@ -267,7 +273,7 @@ We would end up with something like this:
 
 ![display](https://i.imgur.com/zeD1f2m.png)
 
-## Positioning - Codealong (10 mins)
+## Positioning - Catch Up 
 
 Another CSS property, "position", can take `relative` or `absolute` values, among others.
 
@@ -370,7 +376,7 @@ Declaring `position:relative` allows you to position the element top, bottom, le
 }
 ```
 
-## Floats and Clears - Intro (10 min)
+## Floats and Clears - Intro 
 
 The float property specifies whether or not a box (or an element) should float; essentially, it determines whether text will be wrapped around the element.
 
@@ -495,7 +501,7 @@ Lets go back to our CSS and change our "square2" div's positioning from float:le
 `Clear` is saying "I'm not sure how much space I'm going to take but whatever it is clear off my right side" so our text respects its wishes and drops to the line below.
 
 
-## Conclusion (5 mins)
+## Conclusion
 
 - Compare the elements of The Box Model - margin, border, padding, content.
 - How do floats work with clears to create a multicolumn layout?

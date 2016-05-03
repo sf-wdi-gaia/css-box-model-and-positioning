@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- <p>Hi there!</p> -->
+            <div id="square1"></div>
+            <div id="square2"></div>
+            <div id="square3"></div>
+            <div id="square4"></div>
+        </div>   
+
+        <!-- <div class="inline">
+            <div class="inline">Content</div>
+            <div class="inline">Content</div>
+            <div class="inline">Content</div>
+        </div>
+
+        <div class="block">
+            <div class="block">Content</div>
+            <div class="block">Content</div>
+            <div class="block">Content</div>
+        </div>
+
+        <div class="inline-block">
+            <div class="inline-block">Content</div>
+            <div class="inline-block">Content</div>
+            <div class="inline-block">Content</div>
+        </div> -->
+
+
+    </body>
+</html>
