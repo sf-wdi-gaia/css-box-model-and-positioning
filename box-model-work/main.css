@@ -1,0 +1,32 @@
+
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+}
+#square1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+#square2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+#square3 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+#square4 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+div {
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 2px;
+}
