@@ -96,7 +96,7 @@ How about if we drop this code into our CSS file:
 
 Notice the body, the container, and each of the divs are surrounded by a red border.  Peak at the styles tab on the right and scroll all the way to the bottom.  You'll notice boxes within boxes - madness!
 
-## The Box Model and its components - Intro 
+## The Box Model and its components - Intro
 
 The image below illustrates the box model and what you should have seen in your dev tools:
 
@@ -115,7 +115,7 @@ But what do these different layers mean, and how are they relating to one anothe
 
 * **Content** - The content of the box, where text and images appear
 
-#### Layers of the Box Model - Catch Up 
+#### Layers of the Box Model - Catch Up
 
 Let's get go into some more detail and practice with each of these elements of The Box Model.
 
@@ -273,7 +273,7 @@ We would end up with something like this:
 
 ![display](https://i.imgur.com/zeD1f2m.png)
 
-## Positioning - Catch Up 
+## Positioning - Catch Up
 
 Another CSS property, "position", can take `relative` or `absolute` values, among others.
 
@@ -359,23 +359,7 @@ Specifying `position:absolute` _removes the element from the document_ and place
 ```
 
 
-
-##### Relative Positioning
-
-Declaring `position:relative` allows you to position the element top, bottom, left, or right relative to where it would normally occur.
-
-```css
-#square1 {
-    background-color: red;
-    height: 100px;
-    width: 100px;
-    position:relative;
-    top: 0;
-    left: 40px;
-}
-```
-
-## Floats and Clears - Intro 
+## Floats and Clears - Intro
 
 The float property specifies whether or not a box (or an element) should float; essentially, it determines whether text will be wrapped around the element.
 
