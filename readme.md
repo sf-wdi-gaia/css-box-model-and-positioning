@@ -94,7 +94,7 @@ How about if we drop this code into our CSS file:
 }
 ```
 
-Notice the body, the container, and each of the divs are surrounded by a red border.  Peak at the styles tab on the right and scroll all the way to the bottom.  You'll notice boxes within boxes - madness!
+Notice the body, the container, and each of the divs are surrounded by a red border.  Peek at the styles tab on the right and scroll all the way to the bottom.  You'll notice boxes within boxes - madness!
 
 ## The Box Model and its components - Intro
 
@@ -132,10 +132,10 @@ If you want to specify a particular margin, to a particular side, you can do it 
 
 ```css
 div {
-  margin-top: /*some value*/
-  margin-right: /*some value*/
-  margin-bottom: /*some value*/
-  margin-left: /*some-value*/
+  margin-top: /* some value */
+  margin-right: /* some value */
+  margin-bottom: /* some value */
+  margin-left: /* some-value */
 }
 
 ```
@@ -148,7 +148,7 @@ div {
 }
 ```
 
-You can do top-bottom and side side - let's add this to our css for now:
+With two values, the first will apply to top & bottom, the second to both sides, Let's add this to our css for now:
 
 ```css
 div {
@@ -162,7 +162,7 @@ We've talked briefly about borders - the border is the edge of the element. It's
 
 Borders can be set in two ways, just like your margins and just like we've talked about previously.
 
-Lets add some thick borders to our `<div>`'s by removing the `!important` from the `*` selector and adding:
+Let's add some thick borders to our `<div>`'s by removing the `!important` from the `*` selector and adding:
 
 ```css
 div {
@@ -173,11 +173,11 @@ div {
 
 #### Padding and Content
 
-The padding is the spacing between the content and the border. We can adjust this value with CSS to move the border closer to or farther from the content.
+Padding is the space between a piece of content and its own border. We can adjust this value with CSS to move the border closer to or farther from the content.
 
 Padding can be set in two ways, just like your margins.
 
-Lets add some padding to our `<div>`'s from our dev tools.  Notice, the space inside the "boxes" gets larger.  
+Let's add some padding to our `<div>`'s from our dev tools.  Notice, the space inside the "boxes" gets larger.  
 
 ```css
 div {
@@ -219,9 +219,9 @@ Cool, right? Each HTML element gets its own box to live in.
 
 As you saw, the outermost box of each element went all the way across the page. This is why, until now, your HTML elements have been sitting on top of one another: by default, they take up the full width of the page.
 
-We can change all this with the first positioning property we'll learn, the `display` property and the four values we can use: inline, block, inline-block, and none.
+We can change all this with the first positioning property we'll learn, the `display` property and the four values we can use: `inline`, `block`, `inline-block`, and `none`.
 
-* An **inline** element has no line break before or after it. This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line). Inline places all your elements on a single line. The bad news is that it doesn't maintain their "box"ness
+* An **inline** element has no line break before or after it. This makes the element sit on the same horizontal line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line). Inline places all your elements on a single line. The bad news is that it doesn't maintain their boxiness.
 
 * A **block** element has some whitespace above and below it and does not tolerate any HTML elements next to it. This makes the element a block box. It won't let anything sit next to it on the page and takes up the full width.
 
@@ -229,7 +229,7 @@ We can change all this with the first positioning property we'll learn, the `dis
 
 * If you assign **none** as the value of the display, this will make the element and its content disappear from the page entirely!
 
-To illustrate this, if we had this HTML:
+To illustrate this, if we had the following HTML:
 
 
 ```html
@@ -277,12 +277,12 @@ We would end up with something like this:
 
 Another CSS property, "position", can take `relative` or `absolute` values, among others.
 
-A page element with "relative positioning" gives you the control to "absolutely position" children elements inside of it. This might not be obvious to everyone - that's probably because this isn't intuitive, at all. Let's look at an example.
+A page element with "relative positioning" gives you the control to "absolutely position" child elements inside of it. This might not be obvious to everyone - that's probably because this isn't intuitive, at all. Let's look at an example:
 
 
 ![css position relative](https://i.imgur.com/LRd7lBy.png)
 
-The relative positioning on the parent is what matters here. This what would happen if we forgot that:
+The relative positioning on the parent is what matters here. Here is what would happen if we forgot relative positioning:
 
 ![](https://i.imgur.com/0vGcPFL.png)
 
@@ -308,7 +308,7 @@ Declaring `position:relative` allows you to position the element top, bottom, le
 
 #### Static Positioning
 
-HTML elements are positioned static by default. A "static positioned" element is always positioned according to the normal flow of the page and are not affected by the top, bottom, left, and right properties.
+HTML elements are positioned static by default. A "static positioned" element is always positioned according to the normal flow of the page and is not affected by the top, bottom, left, and right properties.
 
 Again, the default positioning for all elements is static. This means that no positioning has been applied and the elements occurs where they normally would in the document.
 
@@ -323,7 +323,7 @@ If we revisit our squares from earlier in class:
 }
 ```
 
-You rarely explicitly declare `position:static` like this because it is the default.
+You rarely explicitly declare `position: static` like this because it is the default.
 
 #### Fixed Positioning
 
@@ -371,7 +371,7 @@ Note that "absolutely positioned" elements ignore the float property as they are
 
 Floated elements remain a part of the flow of the web page. This is distinctly different than page elements that use absolute positioning.
 
-There are four valid values for the float property. "Left" and "right" float elements those directions, respectively. "None" (the default) ensures the element will not float and "inherit" which will assume the float value from that elements parent element.
+There are four valid values for the float property. "Left" and "right" float elements those directions, respectively. "None" (the default) ensures the element will not float and "inherit" which will assume the float value from that element's parent.
 
 #### Clear
 
@@ -442,7 +442,11 @@ This works fine when we know the exact sizes of our elements but what if we were
 
 #### Floats to create multicolumn layouts
 
-If our element sizes are variable or dynamic we can use floats to allow text/other elements to wrap around the floated element.  To illustrate this, lets first go to a favorite ipsum generator and grab four paragraphs of text.
+If our element sizes are variable or dynamic we can use floats to allow text or other elements to wrap around the floated element.  To illustrate this, lets first go to a favorite ipsum generator and grab four paragraphs of text. Here are some of my favorites:
+
+[Bacon Ipsum](http://baconipsum.com/)
+[Hipster Ipsum](http://hipsum.co/)
+[Pirate Ipsum](http://pirateipsum.me/)
 
 Now, let's venture back to our html page and add this text after the closing tag of our "square2" div and before the opening tag of our "square3" div.
 
@@ -453,7 +457,7 @@ Your html should like this:
     <div id="container">
         <div id="square1"></div>
         <div id="square2"></div>
-        (4 paragraphs of ipsum)
+        <!-- 4 paragraphs of ipsum -->
         <div id="square3"></div>
         <div id="square4"></div>
     </div>
@@ -481,7 +485,7 @@ While floats make other elements aware of their location and get text hugs, clea
 
 Lets go back to our CSS and change our "square2" div's positioning from float:left to clear: right.
 
-`Clear` is saying "I'm not sure how much space I'm going to take but whatever it is clear off my right side" so our text respects its wishes and drops to the line below.
+`clear: right` is saying "I'm not sure how much space I'm going to take but whatever it is clear off my right side" so our text respects its wishes and drops to the line below.
 
 
 ## Conclusion
