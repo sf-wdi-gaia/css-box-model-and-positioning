@@ -1,0 +1,49 @@
+* {
+    border: 2px solid pink !important;
+    color: white;
+}
+#container1 {
+    width: 500px;
+    height: 200px;
+}
+#container2 {
+    width: 500px;
+    height: 200px;
+}
+#container3{
+    width: 500px;
+    height: 200px;
+}
+#square1, #square11, #square21 {
+    display: inline;
+    height: 30px;
+    background-color: red;
+}
+#square2, #square12, #square22 {
+    display: inline-block;
+    height: 30px;
+    background-color: blue;
+    text-align: center;
+}
+#square3, #square13, #square23 {
+    display: block;
+    height: 30px;
+    background-color: green;
+}
+#square4, #square14, #square24 {
+    height: 30px;
+    background-color: black;
+}
+.inline{
+    display: inline;
+}
+.inline-block{
+    display: inline-block;
+}
+.block {
+    display: block;
+}
+
+div {
+    margin: 0 auto;
+}
